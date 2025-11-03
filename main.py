@@ -4,6 +4,7 @@ from typing import Optional, List, AsyncGenerator
 from contextlib import asynccontextmanager
 from pathlib import Path
 
+
 class Task(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     title: str
@@ -23,7 +24,6 @@ class TaskUpdate(SQLModel):
 
 
 BASE_DIR = Path(__file__).resolve().parent
-
 
 sqlite_file_name = "database.db"
 sqlite_url = f"sqlite:///{BASE_DIR / sqlite_file_name}"
