@@ -1,0 +1,17 @@
+# Veritabanı
+database.db
+*.sqlite
+*.db
+
+# Python sanal ortamı
+venv/
+*/venv/
+env/
+*/env/
+
+# Python cache dosyaları
+__pycache__/
+*.pyc
+
+# PyCharm ayar dosyaları
+.idea/
