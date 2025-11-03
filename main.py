@@ -9,7 +9,7 @@ class Task(SQLModel, table=True):
     title: str
     description: Optional[str] = None
     completed: bool = False
-g
+
 
 class TaskCreate(SQLModel):
     title: str
